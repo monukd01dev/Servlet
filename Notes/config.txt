@@ -1,0 +1,45 @@
+Tom Cat Configuration
+
+Downloads 
+    tomcat 9
+        Binary distribution
+            core 
+               32/64 window service installer
+
+open exe
+      Server ShutDown Port : 8083
+      User Name : Tomcat
+      Password    : root
+      next
+
+      setting Jre Path
+      next
+
+      Install
+
+Eclipse 
+
+file -> new -> Dynamic Web Project
+         
+Project Name : example
+Target runtime : none
+Next
+
+select -> src\main\java
+Next
+
+Check/tick -> Generate web.xml deployment descriptor
+Finish
+
+Inside Explorer
+
+project -> src -> main -> webapp
+                            right click->new->HTML file ->file name ->finish
+
+
+How to run
+Right click on project ->Run As-> Run on Server
+
+Apache ->v9.0 server->Next
+
+Browse -> C drive -> Program Files->Apache Software Foundation ->Tomcat 9.0 (Double Clicke)->Continue->Select Folder->Finish
