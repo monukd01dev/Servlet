@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gst Calculator</title>
+
+    <style>
+        input.middle:focus,input:focus {
+        outline-width: 0;
+        }
+        *{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        td{
+            height: 60px;
+            width: 180px;
+            padding: 0;
+        }
+        input{
+            margin: 0;
+            width: auto;
+            height: 90%;
+            border: none;
+            font-size: ;
+        }
+        select,select:focus,input.middle:focus{
+            width: 90%;
+            height: 90%;
+            border: none;
+            outline-width: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>GST Calculator</h1>
+    <!-- net amount, gst rate,  -->
+
+    <form action="cal" method="get">
+        <table border="1px">
+            <thead>
+
+                <tr>
+                    <th>Amount</th>
+                    <th>GST</th>
+                    <th>Tax</th>
+                </tr>
+                
+            </thead>
+                
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" name="amonut">
+                    </td>
+                    <td>
+                        <select name="rate" id="rate">
+                            <option value="5">5%</option>
+                            <option value="12">12%</option>
+                            <option value="18">18%</option>
+                            <option value="28">28%</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="tax" id="tax">
+                            <option value="ex">Exclusive</option>
+                            <option value="in">Inclusive</option>
+                        </select>
+                    </td>
+                </tr>
+                
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <input type="sumbit" value="Calculate" class="btn">
+                    </td>
+                </tr>
+            </tfoot>
+            
+        </table>
+    </form>
+
+</body>
+</html>
