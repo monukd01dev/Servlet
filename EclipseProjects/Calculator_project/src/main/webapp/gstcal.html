@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gst Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
 
     <style>
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
         input.middle:focus,input:focus {
         outline-width: 0;
         }
@@ -13,6 +20,18 @@
             background-color: black;
             color: white;
             text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1{
+            font-size: 70px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        th{
+            font-size: 25px;
         }
         td{
             height: 60px;
@@ -24,7 +43,7 @@
             width: auto;
             height: 90%;
             border: none;
-            font-size: ;
+            font-size: 30px ;
         }
         select,select:focus,input.middle:focus{
             width: 90%;
@@ -32,58 +51,70 @@
             border: none;
             outline-width: 0;
         }
+        .btn{
+            color: white;
+            /* background-color: red; */
+            width: 95%;
+            
+        }
+        
     </style>
 
 </head>
 <body>
-    <h1>GST Calculator</h1>
+    <h1>FREE GST CALCULATOR</h1>
     <!-- net amount, gst rate,  -->
 
-    <form action="cal" method="get">
-        <table border="1px">
-            <thead>
-
-                <tr>
-                    <th>Amount</th>
-                    <th>GST</th>
-                    <th>Tax</th>
-                </tr>
-                
-            </thead>
-                
-            <tbody>
-                <tr>
-                    <td>
-                        <input type="text" name="amonut">
-                    </td>
-                    <td>
-                        <select name="rate" id="rate">
-                            <option value="5">5%</option>
-                            <option value="12">12%</option>
-                            <option value="18">18%</option>
-                            <option value="28">28%</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="tax" id="tax">
-                            <option value="ex">Exclusive</option>
-                            <option value="in">Inclusive</option>
-                        </select>
-                    </td>
-                </tr>
-                
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <td colspan="3">
-                        <input type="sumbit" value="Calculate" class="btn">
-                    </td>
-                </tr>
-            </tfoot>
-            
-        </table>
-    </form>
+    <div class="container">
+        <div class="fcontainer">
+            <form action="cal" method="get">
+                <table border="1px">
+                    <thead>
+        
+                        <tr>
+                            <th>Amount</th>
+                            <th>GST</th>
+                            <th>Tax</th>
+                        </tr>
+                        
+                    </thead>
+                        
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="number" name="amount" required>
+                            </td>
+                            <td>
+                                <select name="rate" id="rate">
+                                    <option value="5">5%</option>
+                                    <option value="12">12%</option>
+                                    <option value="18">18%</option>
+                                    <option value="28">28%</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="tax" id="tax">
+                                    <option value="in">Inclusive</option>
+                                    <option value="ex">Exclusive</option>
+                                </select>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+        
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                
+                                <input class="button" type="submit" value="Calculate">
+                            </td>
+                        </tr>
+                    </tfoot>
+                    
+                </table>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>

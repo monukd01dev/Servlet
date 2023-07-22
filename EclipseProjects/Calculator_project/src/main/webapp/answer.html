@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST result</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            /* color: white; */
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            
+
+        }
+        .outer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .resutl_con {
+            margin-top: 100px;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            background-color: aquamarine;
+            /* width: 500px;
+            height: 600px; */
+            border: 1px solid black;
+            border-radius: 20px;
+            padding-bottom: 15px;
+        }
+        .num{
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            border: px solid black;
+            margin: 10px 40px;
+            padding: 10px 35px;
+            border-radius: 25px;
+            width: 300px;
+            font-size: 20px;
+            /* justify-content: space-around; */
+            justify-content: space-between;
+        }
+        .btn{
+            width: 120px;
+            margin: 15px auto;
+            padding: 15px 25px;
+            border-radius: 15px;
+            border: none;
+            background-color: red;
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .key{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="resutl_con">
+            <h1>YOUR GST</h1>
+
+            <div class="num">
+                <span class="key">Actual Amount</span>
+                <span class="value">1000</span>
+            </div>
+
+            <div class="num">
+                <span class="key">GST Amount</span>
+                <span class="value">1000</span>
+            </div>
+
+            <div class="num">
+                <span class="key">Total Amount</span>
+                <span class="value">1000</span>
+            </div>
+
+            <button class="btn">
+                <a href="gstcal.html">BACK</a>
+            </button>
+
+        </div>
+    </div>
+</body>
+
+</html>
