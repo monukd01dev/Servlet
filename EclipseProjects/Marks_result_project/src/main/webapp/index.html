@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter your marks</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .outer{
+
+            display: flex;
+            justify-content: center;
+            padding-top: 10vh;
+            
+        }
+        .container{
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: aquamarine;
+        }
+        th{
+            font-size: 2rem;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+        
+        td{
+            width: 500%;
+            font-size: 1.5rem;
+            padding:10px 5px;
+        }
+        input{
+            margin: 0;
+            width: 80%;
+            border: none;
+            border-radius: 50px;
+            outline: none;
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 5px;
+            background-color:rgb(252, 252, 255);
+            
+        }
+        input[type="submit"]{
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            width: 30%;
+            padding: 10px 10px;
+            border: none;
+        }
+        .right{
+            text-align: left;
+            width: 35%;
+            padding-left: 10%;
+        }
+        
+        
+
+        table,tr,td{
+            /* border: 1px solid black; */
+            /* border-collapse: collapse; */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="container">
+            <form action="/MarksCal">
+                <table >
+                    <tr>
+                        <th colspan="2">
+                            Enter Your marks
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="right">Maths</td>
+                        <td><input type="text" name="math" required ></td>
+                    </tr>
+                    <tr>
+                        <td class="right">Science</td>
+                        <td><input type="text" name="science"  required ></td>
+                    </tr>
+                    <tr>
+                        <td class="right">Hindi</td>
+                        <td><input type="text" name="hindi" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

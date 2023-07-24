@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        .outer{
+            padding-top: 5vh;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            width: 23.5rem;
+            border: 1px solid red;
+            padding: 10px;
+        }
+        .detail{
+            /* border: 1px solid red; */
+            /* border: 1px solid blue; */
+            height: 11.6em;
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img{
+            height: 2em;
+            width: 2em;
+            /* border-radius: 100px; */
+        }
+        .profile{
+            height: 10rem;
+            width: 10rem;
+            margin-top: auto;
+            margin-bottom: auto;
+            border-radius: 100px;
+        }
+        .img{
+            height: 100%;
+            width: auto;
+            border: 1px solid red;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .marks{
+            border: 1px solid greenyellow;
+        }
+        table{
+            width: 100%;
+            border: 1px solid black;
+        }
+        .info{
+            text-align: left;
+        }
+
+        /* text sizing */
+        h1{
+            font-size: 2rem;
+            margin-bottom: 0.05rem;
+        }
+        
+        .info>h3{
+            margin-top: 0;
+            font-size: 0.9em ;
+            font-style: italic ;
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+        .links{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 1.8em;
+            margin-bottom: 1.8em;
+            margin-right: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="container">
+            <div class="detail">
+                <div class="img">
+                    <img src="profile_img.jpeg" class="profile" alt="">
+                </div>
+                <div class="info">
+                    <h1>Monu Kumar</h1>
+                    <h3>learning java fullstack</h3>
+                    <div class="links">
+                        <a href="#" title="Follow me on Twitter"><img src="https://www.freeiconspng.com/uploads/logo-twitter-circle-png-transparent-image-1.png" width="350" alt="Logo Twitter Circle PNG Transparent Image" /></a>
+                        <a href="#" title="Follow me on Github"><img src="https://www.freeiconspng.com/uploads/github-logo-icon-32.jpg" width="350" alt="Transparent Github Logo Icon" /></a>
+                        <a href="#" title="Follow me on LinkedIn"><img src="https://www.freeiconspng.com/uploads/linkedin-logo-3.png" width="350" alt="Linkedin Logo Png Available In Different Size" /></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="marks">
+                <h2>Result </h2>
+                <table>
+                    <tr>
+                        <th>Math</th>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th>Science</th>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <th>Hindi</th>
+                        <td>94</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
