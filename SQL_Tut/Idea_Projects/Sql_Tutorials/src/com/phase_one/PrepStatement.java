@@ -2,6 +2,7 @@ package com.phase_one;
 import java.util.*;
 import java.sql.*;
 
+
 public class PrepStatement {
 
     private Connection con;
@@ -9,6 +10,7 @@ public class PrepStatement {
     private Scanner sc;
 
     PrepStatement() {
+        sc = new Scanner(System.in);
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql:///GITM","root","root");
@@ -16,6 +18,33 @@ public class PrepStatement {
             e.printStackTrace();
         }
     }
+
+    //menu prompt
+    int choiceSelector() {
+        int choice =0;
+        System.out.print("--> What do you want to do : ");
+        choice = sc.nextInt();
+
+        return choice;
+    }
+
+    //insert Prompt
+    int insertPrompt() throws SQLException {
+        System.out.print("Enter the number of student you want to add : ");
+        int number = sc.nextInt();
+        if (number == 0) {
+            System.out.println("Oky.. :( ");
+            return 0;
+        } else {
+            for (int i = 1; i<=number; i++) {
+                System.out.println("---> Student : "+i);
+                insertIntoStudent();
+            }
+            return 1;
+        }
+
+    }
+
 
     void showTables() {
         try {
@@ -30,10 +59,9 @@ public class PrepStatement {
             e.printStackTrace();
         }
     }
-//    int id,String name,int rollno,String email
+
     int insertIntoStudent() throws SQLException{
         st = con.prepareStatement("insert into student(id,name,rollno,email) values(?,?,?,?)");
-        sc = new Scanner(System.in);
 
         System.out.print("Enter Student ID       : ");
         int id = sc.nextInt();
@@ -70,21 +98,6 @@ public class PrepStatement {
         return st.executeUpdate();
     }
 
-    int deletePrompt() {
-        sc = new Scanner(System.in);
-        System.out.println("---------Delete Student---------");
-        System.out.print("Enter the Roll No : ");
-        int rollno = sc.nextInt();
-        try {
-           return deleteStudent(rollno);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return 0;
-
-    }
-
     int showStudent(int rollno) throws SQLException{
         st = con.prepareStatement("select * from student where rollno = ?");
         st.setInt(1,rollno);
@@ -94,19 +107,27 @@ public class PrepStatement {
             return 1;
         } else {
             System.out.println("Please enter correct RollNo :( ");
-            return 0;
+            deletePrompt();
         }
+        return 0;
     }
+    // Deleting
+    int deletePrompt()throws SQLException {
+        System.out.println("---------Delete Student---------");
+        System.out.print("Enter the Roll No : ");
+        int rollno = sc.nextInt();
+
+    return deleteStudent(rollno);
+}
 
     int deleteStudent(int rollno)throws SQLException {
 
         showStudent(rollno);
-        sc = new Scanner(System.in);
-        System.out.print("\n Are you sure you want to delete this student details...(y/n) : ");
+        System.out.print("\nAre you sure you want to delete this student details...(y/n) : ");
 
         char ans = sc.next().trim().charAt(0);
         if (ans == 'y') {
-            st = con.prepareStatement("delete from student where rollno ='?'");
+            st = con.prepareStatement("delete from student where rollno = ? ");
             st.setInt(1, rollno);
             return st.executeUpdate();
         } else {
@@ -121,15 +142,49 @@ public class PrepStatement {
         return 0;
     }
 
-    public static void main(String[] args) {
-        PrepStatement myobj = new PrepStatement();
-        myobj.showTables();
-        try {
-            int ans = myobj.insertIntoStudent();
-            int ans1 = myobj.deletePrompt();
-            System.out.println(ans+"    "+ans1);
-        } catch (SQLException e) {
-            e.printStackTrace();
+    void utility(int ans , String message) {
+        if (ans == 1) {
+            System.out.println(message);
+        } else {
+            System.out.println("Seems like we have encountered a problem...");
         }
+    }
+
+    public static void main(String[] args) throws Exception {
+        PrepStatement myobj = new PrepStatement();
+
+        System.out.println("|-_-_-_-_-_-_-_-_-_--< Admin Panel >--_-_-_-_-_-_-_-_-_-_-_-|");
+        System.out.println("|       1. Insert Student Details                           |");
+        System.out.println("|       2. Show Student Details                             |");
+        System.out.println("|       3. Delete Student Details                           |");
+        System.out.println("|       4. Update Student Details                           |");
+        System.out.println("|_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_|");
+
+        switch (myobj.choiceSelector()) {
+            case 1 :
+                myobj.utility(myobj.insertPrompt(),"Details Inserted Successfully...");
+                break;
+
+            case 2 :
+                myobj.utility(myobj.deletePrompt(),"Details Deleted Successfully");
+                break;
+
+
+            case 3 :
+                myobj.deletePrompt();
+                break;
+
+
+            case 4 :
+                myobj.showTables();
+                break;
+
+
+            default :
+                //well that's right
+
+
+        }
+
     }
 }
