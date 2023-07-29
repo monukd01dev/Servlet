@@ -98,6 +98,25 @@ public class PrepStatement {
         return st.executeUpdate();
     }
 
+    int showStudentPrompt() throws SQLException {
+        System.out.print("Enter the roll no of Student : ");
+        int rollno = sc.nextInt();
+        int ans = showStudent(rollno);
+
+        if (ans == 1) {
+            System.out.print("See another (y/n) : ");
+            char ans1 = sc.next().trim().charAt(0);
+            if (ans1 == 'y' || ans1 == 'Y') {
+                showStudentPrompt();
+            } else {
+                return 1;
+            }
+        } else {
+            System.out.println("<--Please enter the correct roll no-->");
+            showStudentPrompt();
+        }
+        return 0;
+    }
     int showStudent(int rollno) throws SQLException{
         st = con.prepareStatement("select * from student where rollno = ?");
         st.setInt(1,rollno);
@@ -105,11 +124,10 @@ public class PrepStatement {
         if (rs.next()) {
             System.out.println("Student Name    : " + rs.getString("name") + "\nStudent Id     : " + rs.getInt("id") + "\nStudent E-mail    : " + rs.getString("email"));
             return 1;
-        } else {
-            System.out.println("Please enter correct RollNo :( ");
-            deletePrompt();
         }
+
         return 0;
+
     }
     // Deleting
     int deletePrompt()throws SQLException {
@@ -122,7 +140,11 @@ public class PrepStatement {
 
     int deleteStudent(int rollno)throws SQLException {
 
-        showStudent(rollno);
+        int res = showStudent(rollno);
+        if (res != 1) {
+            System.out.println("Please enter correct RollNo :( ");
+            deletePrompt();
+        }
         System.out.print("\nAre you sure you want to delete this student details...(y/n) : ");
 
         char ans = sc.next().trim().charAt(0);
@@ -142,7 +164,7 @@ public class PrepStatement {
         return 0;
     }
 
-    void utility(int ans , String message) {
+    void utility(int ans , String message ) {
         if (ans == 1) {
             System.out.println(message);
         } else {
@@ -152,37 +174,30 @@ public class PrepStatement {
 
     public static void main(String[] args) throws Exception {
         PrepStatement myobj = new PrepStatement();
-
-        System.out.println("|-_-_-_-_-_-_-_-_-_--< Admin Panel >--_-_-_-_-_-_-_-_-_-_-_-|");
-        System.out.println("|       1. Insert Student Details                           |");
-        System.out.println("|       2. Show Student Details                             |");
-        System.out.println("|       3. Delete Student Details                           |");
-        System.out.println("|       4. Update Student Details                           |");
-        System.out.println("|_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_|");
+        for (;;) {
+        System.out.println("|-_-_-_-_-_-_--< Admin Panel >--_-_-_-_-_-_-_-|");
+        System.out.println("|                                             |");
+        System.out.println("|       1. Insert Student Details             |");
+        System.out.println("|       2. Show Student Details               |");
+        System.out.println("|       3. Delete Student Details             |");
+        System.out.println("|                                             |");
+        System.out.println("|_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_|");
 
         switch (myobj.choiceSelector()) {
-            case 1 :
-                myobj.utility(myobj.insertPrompt(),"Details Inserted Successfully...");
+            case 1 -> myobj.utility(myobj.insertPrompt(), "Details Inserted Successfully...");
+            case 2 -> myobj.utility(myobj.showStudentPrompt(), "");
+            case 3 -> myobj.utility(myobj.deletePrompt(), "Details Deleted Successfully");
+            default -> {
+                System.out.println("Please enter the correct value...");
+            }
+            //well that's right
+        }
+
+            System.out.print("\nExit or Continue (e/c) : ");
+            char exit = myobj.sc.next().trim().charAt(0);
+            if (exit == 'e' || exit == 'E') {
                 break;
-
-            case 2 :
-                myobj.utility(myobj.deletePrompt(),"Details Deleted Successfully");
-                break;
-
-
-            case 3 :
-                myobj.deletePrompt();
-                break;
-
-
-            case 4 :
-                myobj.showTables();
-                break;
-
-
-            default :
-                //well that's right
-
+            }
 
         }
 
