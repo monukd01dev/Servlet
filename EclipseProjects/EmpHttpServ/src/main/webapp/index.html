@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://www.flaticon.com/free-icons/manager" type="image/x-icon">
+    <title>Registration</title>
+    <style>
+
+        input { outline: none; }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        .outer{
+            display: flex;
+            justify-content: center;
+            padding-top: 5vh;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* border: 1px solid black; */
+            border-radius: 25px;
+            padding: 30px;
+            background: blueviolet;
+            box-shadow: inset;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            
+        }
+        .inp{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        img{
+            height: 12rem;
+            border: 3px solid yellow;
+            border-radius: 100%;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid green; */
+            width: 100%;
+        }
+        .inp{
+            margin: 10px 0;
+            /* border: 1px solid blue; */
+        }
+        .inps{
+            margin: 5px;
+        }
+
+        .button{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            height: 30px;
+        }
+        .btn{
+            /* color: red; */
+            width: 50%;
+            height: 45px;
+            font-size: 20px;
+            border-radius: 25px;
+            border: 2px solid yellow;
+            background: red;  
+            color: white;         
+
+        }
+        .inps input{
+            width: 230px;
+            height: 40px;
+            border-radius: 25px;
+            /* padding-top: 1px;
+            padding-bottom: 1px; */
+            padding-left: 25px;
+            font-size: 20px;
+            border: 2px solid black;
+            
+        }
+
+        .btn:hover{
+            background-color: yellow;
+            border: 2px solid red;
+            color: black;
+        }
+
+        .inps input:hover {
+            border: 2px solid red;
+        }
+        
+
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="container">
+        <form action="Employee" method="get">
+            <div class="img">
+                <img src="favicon.png" alt="">
+            </div>
+            <div class="inp">
+                <div class="inps">
+                    <input type="number" name="emp_id" placeholder="Emp ID" required>
+                </div>
+                <div class="inps">
+                    <input type="text" name="emp_name" placeholder="Emp Name" required>
+                </div>
+                <div class="inps">
+                    <input type="text" name="emp_position" placeholder="Emp Position" required>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" class ="btn" value="Register">
+            </div>
+        </form>
+
+
+    </div>
+</div>
+</body>
+</html>
