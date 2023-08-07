@@ -1,0 +1,22 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+<!--  <display-name>TomCatConfig</display-name>-->
+  <welcome-file-list>
+    <welcome-file>View/SignUp.html</welcome-file>
+    <welcome-file>View/LogIn.html</welcome-file>
+  </welcome-file-list>
+
+  <!--  <servlet>-->
+  <!--    <servlet-name>CatConfig</servlet-name>-->
+  <!--    <servlet-class>com.servlet.CatConfig</servlet-class>-->
+  <!--  </servlet>-->
+  <!--  <servlet-mapping>-->
+  <!--    <servlet-name>CatConfig</servlet-name>-->
+  <!--    <url-pattern>/useme</url-pattern>-->
+  <!--  </servlet-mapping>-->
+
+</web-app>
