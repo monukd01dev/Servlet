@@ -60,7 +60,7 @@ public class Signup extends HttpServlet {
 
 //            RequestDispatcher dispatcher = req.getRequestDispatcher("View/LogIn.html");
 //            dispatcher.forward(req,resp);
-            resp.sendRedirect("View/LogIn.html");
+            resp.sendRedirect("LogIn.html");
 
         } else {
             out.print("Something went wrong try again");

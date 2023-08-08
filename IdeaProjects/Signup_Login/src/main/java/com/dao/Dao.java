@@ -43,15 +43,20 @@ public class Dao {
     //Userlogin method
     public boolean login(Userlogin userlogin) throws SQLException {
         boolean result = false;
-        String query = "select * from employee where username = '?' and password = '?'";
+        String query = "SELECT * FROM employee WHERE username = ? AND PASSWORD = ?";
         stmt = con.prepareStatement(query);
 
         stmt.setString(1,userlogin.getUsername());
         stmt.setString(2,userlogin.getPassword());
 
+
         ResultSet rs = stmt.executeQuery();
 
         result = rs.next();
+
+        //error solving approach
+//        System.out.println(stmt);
+//        System.out.println(result);
 
         return result;
     }

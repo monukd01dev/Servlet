@@ -6,8 +6,8 @@
 
 <!--  <display-name>TomCatConfig</display-name>-->
   <welcome-file-list>
-    <welcome-file>View/SignUp.html</welcome-file>
-    <welcome-file>View/LogIn.html</welcome-file>
+    <welcome-file>SignUp.html</welcome-file>
+    <welcome-file>LogIn.html</welcome-file>
   </welcome-file-list>
 
   <!--  <servlet>-->

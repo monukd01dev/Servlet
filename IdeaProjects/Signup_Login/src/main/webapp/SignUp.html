@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="asset/icon/add-user.ico" type="image/x-icon">
+    <title>SignUp</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         body{
@@ -147,6 +148,7 @@
 </head>
 <body>
 <div class="outer">
+    <!--  Container  -->
     <div class="container">
         <form action="Signup" method="post">
             <div class="label">
@@ -154,15 +156,15 @@
             </div>
             <div class="formCon">
                 <div class="dualInput">
-                    <input class="inp" type="text" name="firstname" placeholder="First Name">
-                    <input class="inp" type="text" name="lastname" placeholder="Last Name">
+                    <input class="inp" type="text" name="firstname" placeholder="First Name"   required>
+                    <input class="inp" type="text" name="lastname" placeholder="Last Name" required>
                 </div>
 
                 <div class="longbtn">
-                    <input type="text" class="inp"  placeholder="Username" name="username">
-                    <input type="password" class="inp"  placeholder="Password" name="password">
-                    <input type="text" class="inp"  placeholder="Address" name="address">
-                    <input type="email" class="inp"  placeholder="Email" name="email">
+                    <input type="text" class="inp"  placeholder="Username" name="username" required>
+                    <input type="password" class="inp"  placeholder="Password" name="password" required>
+                    <input type="text" class="inp"  placeholder="Address" name="address"   required>
+                    <input type="email" class="inp"  placeholder="Email" name="email"  required>
                 </div>
 
                 <div class="dualBtn">
@@ -171,13 +173,14 @@
                 </div>
         </form>
     </div>
+
+    <!--    Login here    -->
     <div class="dualBtn some_margin">
         <!-- <input class="inp btn login" type="submit" value="Sign Up" > -->
-        <a href="View/LogIn.html" ><button class="inp btn login" >Log In</button></a>
+        <a href="LogIn.html" ><button class="inp btn login" >Log In</button></a>
 
     </div>
-
-</div>
+    <!-- outer div ends -->
 </div>
 </body>
 </html>
