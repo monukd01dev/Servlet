@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="21037056-9406-4658-982f-dd2b09a369f7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/java/com/servlet/CookieDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/java/com/servlet/Welcome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/asset/404 Error-pana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/asset/404_error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/asset/hello.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/asset/icon/404-error.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/asset/icon/add-user.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/asset/icon/checked.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/asset/icon/password.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CookiesImplementation/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/java/com/servlet/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/java/com/servlet/MyServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/asset/404 Error-pana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/asset/404_error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/asset/hello.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/asset/icon/404-error.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/asset/icon/add-user.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/asset/icon/checked.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/asset/icon/password.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpSessionImplementation/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/UrlRewriting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/Welcome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset/404 Error-pana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset/404_error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset/hello.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset/icon/404-error.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset/icon/add-user.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset/icon/checked.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset/icon/password.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2Tr4i1mYKMNrmddagGdssQAmJff" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/monuk/OneDrive/Desktop/Advance_Java/on gitHub files/Servlet/IdeaProjects/UrlRewritingImplementation",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\monuk\OneDrive\Desktop\Advance_Java\on gitHub files\Servlet\IdeaProjects\CookiesImplementation\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="contextPath" value="/UrlRewritingImplementation" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.78" />
+          <option name="path" value="$PROJECT_DIR$/../../../../../../../../../Program Files/Apache Software Foundation/Tomcat 9.0" />
+          <option name="version" value="9.0.78.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="CookiesImplementation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21037056-9406-4658-982f-dd2b09a369f7" name="Changes" comment="" />
+      <created>1691787992642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691787992642</updated>
+    </task>
+    <servers />
+  </component>
+</project>
