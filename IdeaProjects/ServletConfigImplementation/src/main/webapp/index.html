@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServletConfig</title>
+    <style>
+
+        body{
+        display: flex;           /* establish flex container */
+        flex-direction: column;  /* make main axis vertical */
+        justify-content: center; /* center items vertically, in this case */
+        align-items: center;
+        height:100vh;
+        overflow:hidden;
+        }
+        button{
+            padding: 10px 20px;
+            font-size:30px;
+            border-radius: 5px;
+            margin:10px
+        }
+        .get_all{
+            padding: 10px 33px;
+        }
+        button:hover{
+            background-color:black;
+            color:yellow;
+            border: 4px solid yellow;
+        }
+         .get_all:hover{
+                    background-color:black;
+                    color:red;
+                    border: 4px solid red;
+                }
+
+    </style>
+</head>
+<body>
+<a href="MyServlet"><button>Get One</button></a>
+<a href="MyServlet2"><button class="get_all">Get All</button></a>
+</body>
+</html>
