@@ -36,6 +36,24 @@
     <url-pattern>/MyServlet2</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>ServletContextDemo</servlet-name>
+    <servlet-class>com.servlet.ServletContextDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletContextDemo</servlet-name>
+    <url-pattern>/ServletContextDemo</url-pattern>
+  </servlet-mapping>
+
+  <context-param>
+    <param-name>uncanny</param-name>
+    <param-value>meme.mp4</param-value>
+  </context-param>
+ <context-param>
+    <param-name>message</param-name>
+    <param-value>Learning Java From January To ...</param-value>
+  </context-param>
+
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>

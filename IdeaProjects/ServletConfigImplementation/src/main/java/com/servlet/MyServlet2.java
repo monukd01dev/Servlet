@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Enumeration;
 
 public class MyServlet2 extends HttpServlet {
     @Override
@@ -14,7 +15,11 @@ public class MyServlet2 extends HttpServlet {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
         ServletConfig config = getServletConfig();
-        String value = config.getInitParameter("number");
-        out.print("<img src=\"assets/"+value+".jpg\" alt=\"meme\">");
+        String name = " ";
+        Enumeration<String> e = config.getInitParameterNames();
+        while (e.hasMoreElements()) {
+            name = e.nextElement();
+            out.print("<img src=\"assets/"+config.getInitParameter(name).trim()+".jpg\" alt=\"meme\">");
+        }
     }
 }
